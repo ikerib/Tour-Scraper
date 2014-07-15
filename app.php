@@ -55,7 +55,7 @@ $smtp->setPassword('E-posta pasahitza');
 
 $mailer = new Swift_Mailer($smtp);
 
-$mezua = echo sprintf("Nire sailkapen orokorra: %s, puntuak: %s\n", $nirepos, $nirepuntuk);
+$mezua = sprintf("Nire sailkapen orokorra: %s, puntuak: %s\n", $nirepos, $nirepuntuk);
 
 $message = Swift_Message::newInstance('Naiz Tour Jokoa', $mezua)
     ->setFrom(array('Remite E-posta' => 'Remite izena'))
